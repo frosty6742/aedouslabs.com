@@ -17,16 +17,20 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
       <div id="header-container"></div>
 
-      <!-- Load header dynamically -->
-      <script>
-      fetch('header.html')
-        .then(res => res.text())
-        .then(data => {
-          document.getElementById('header-container').innerHTML = data;
-        });
-      </script>
 
-
+      <!-- Header -->
+      <header id="header">
+        <h1 id="logo"><a href="index.html">Aedous Labs</a></h1>
+        <nav id="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#" class="button primary">Shop</a></li>
+          </ul>
+        </nav>
+      </header>
 
       <!-- Main -->
       <div id="main" class="wrapper style1">

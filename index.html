@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-Landed by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
   <head>
     <title>Aedous Labs</title>
@@ -17,16 +13,21 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
       <div id="header-container"></div>
 
-      <!-- Load header dynamically -->
-      <script>
-      fetch('header.html')
-        .then(res => res.text())
-        .then(data => {
-          document.getElementById('header-container').innerHTML = data;
-        });
-      </script>
+      <!-- Header -->
+      <header id="header">
+        <h1 id="logo"><a href="index.html">Aedous Labs</a></h1>
+        <nav id="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#" class="button primary">Shop</a></li>
+          </ul>
+        </nav>
+      </header>
 
-<!--
+      <!--
       <section id="banner">
         <div class="content">
           <header>
@@ -98,12 +99,10 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
             <p>About Us</p>
           </header>
           <p>Aedous Labs is a aerospace engineering and defense company. We specialise in building products that assist in microelectronics prototyping and development, search and rescue equipment, avionics, and defense. Our products are designed in the USA by our team of engineering students. We aim to bring customers the best possible products and solutions.  </p>
-          <ul class="actions">
-            <div class="button-container">
-              <li><a href="projects.html" class="button">Projects</a></li>
-              <li><a href="" class="button primary">Shop<a/></li>
-            </div>
-          </ul>
+          <div class="button-container">
+            <a href="projects.html" class="button">Projects</a>
+            <a href="#" class="button primary">Shop</a>
+          </div>
         </div>
         <a href="#four" class="goto-next scrolly">Next</a>
       </section>
