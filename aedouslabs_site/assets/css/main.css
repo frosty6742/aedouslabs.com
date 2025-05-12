@@ -29,8 +29,28 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+
+/* Regular weight */
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter_Web/Inter-Regular.woff2") format("woff2"),
+         url("../fonts/Inter_Web/Inter-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Bold weight */
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter_Web/Inter-Bold.woff2") format("woff2"),
+         url("../fonts/Inter_Web/Inter-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
 body {
 	line-height: 1;
+  font-family: "Inter";
 }
 
 ol, ul {
@@ -99,13 +119,14 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.75);
-		font-family: "Roboto", Helvetica, sans-serif;
+		font-family:  "Inter", "Roboto", Helvetica, sans-serif;
 		font-size: 15pt;
 		font-weight: 100;
 		line-height: 1.75em;
 	}
 
 	a {
+    font-family:"Inter";
 		-moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -134,8 +155,10 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: 2.2em;
 		color: #ffffff;
-		font-weight: 300;
 		line-height: 1em;
 		margin: 0 0 1em 0;
 	}
@@ -2931,6 +2954,11 @@ input, select, textarea {
 			opacity: 0.25;
 		}
 
+  .button-container {
+    display: flex; /* Align buttons horizontally */
+    gap: 10px; /* Space between buttons */
+  }
+
 /* Goto Next */
 
 	.goto-next {
@@ -3147,7 +3175,7 @@ input, select, textarea {
 		}
 
 		.spotlight.style3 .content {
-			border-color: #39c088;
+			border-color: #FFF8E8;
 		}
 
 		.spotlight.inactive .content {
